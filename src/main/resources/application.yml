@@ -1,0 +1,20 @@
+server:
+  port: 10009
+
+spring:
+  ##数据库
+  datasource:
+    url: jdbc:mysql://192.168.20.27:3306/wq_use?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    hikari:
+      maximum-pool-size: 5
+logging:
+  file:
+    path: log
+
+
+setting:
+  isDev: true
+  allowPaths:
+    - /public
